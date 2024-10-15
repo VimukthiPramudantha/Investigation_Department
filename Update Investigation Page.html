@@ -7,20 +7,29 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <header class="modern-header">
         <h1>Update Investigation</h1>
     </header>
     <main>
-        <section class="form-section">
-            <h2>Formal Inquiry</h2>
+        <section class="form-section modern-form">
             <form>
-                <label for="appointDate">Date of Appointment:</label>
-                <input type="date" id="appointDate" name="appointDate" required>
+                <h2>Update Formal Inquiry</h2>
+                <label for="dateAppoint">Date of Appointment</label>
+                <input type="date" id="dateAppoint" name="dateAppoint" required>
 
-                <label for="startDate">Started Date:</label>
+                <label for="startDate">Started Date</label>
                 <input type="date" id="startDate" name="startDate" required>
 
-                <!-- Repeat similar structure for other fields in Formal Inquiry, Charge Sheet, and Interim Report -->
+                <label for="endDate">End Date</label>
+                <input type="date" id="endDate" name="endDate" required>
+
+                <label for="recommendation">Recommendation of Investigation Officer</label>
+                <input type="text" id="recommendation" name="recommendation" required>
+
+                <label for="dateRecommend">Date of Recommendation</label>
+                <input type="date" id="dateRecommend" name="dateRecommend" required>
+
+                <button type="submit" class="btn">Update</button>
             </form>
         </section>
     </main>
